@@ -1,0 +1,7 @@
+import re
+
+with open("input.txt", "r") as f:
+    text = f.read()
+
+numbers = re.findall(r'\b[6-9]\d{9}\b', text)
+print("Mobile numbers:", numbers)
